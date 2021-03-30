@@ -2,107 +2,65 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Aaron's Personal Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicons/favicon2.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Aaron Barkan</title>
 </head>
 
 <body>
-  <table cellspacing="20">
-    <tr>
-      <td> <img src="aaron.png" alt="aaron's profile picture">
-      </td>
-      <td>
-        <h1>Aaron Barkan</h1>
-        <p><em>Undergraduate Computer Science student in the <strong><a href="https://www.openu.ac.il/" target="_blank">Open University</a></strong></em></p>
-        <p>I am learning to develop programs, and I love coffe and playing the piano.</p>
-      </td>
-    </tr>
-  </table>
 
-  <hr>
-  <h3>Education</h3>
-  <ul>
-    <li>Ben-Gurion University courses:
-      <ul>
-        <li>Calculus 1</li>
-        <li>Calculus 2</li>
-        <li>Discrete Mathematics</li>
-        <li>Intro to Computer Science - Python</li>
-        <li>Intro to Systems Programming - C and C++</li>
-        <li>Linear Algebra 1</li>
-        <li>Linear Algebra 2</li>
-        <li>Mathematical Intro for Engineering</li>
-        <li>Physics 1</li>
-        <li>Physics 2</li>
-      </ul>
-    </li>
-    <li>Open University courses:
-      <ul>
-        <li>Intro to Computer Science - Java</li>
-      </ul>
-    </li>
-  </ul>
-  <hr>
-  <h3>Work Experience</h3>
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Dates</th>
-        <th>Work</th>
-      </tr>
-    </thead>
-    <tbody>
+  <div class="top-container">
+    <h1 class="hello-header">I'm Aaron.</h1>
+    <p class="hello-paragraph">a programmer.</p>
+    <img class="mountain" src="images/mountain2.png" alt="snow-top-mountain">
+    <img class="big-cloud" src="images/cloud-big.png" alt="big-cloud">
+    <img class="small-cloud-top" src="images/cloud-small.png" alt="small-cloud-top">
+    <img class="small-cloud-bottom" src="images/cloud-small.png" alt="small-cloud-bottom">
+  </div>
 
-    </tbody>
-    <tfoot>
+  <div class="middle-container">
+    <div class="profile">
+      <img class="profile-img" src="images/aaron.png" alt="aaron-img">
+      <h2>Hello.</h2>
+      <p>I'm a Computer Science student at The Open University of Israel. I ❤️ coffe and I play the piano.</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="skill-img" src="images/skill3.png" alt="">
+        <h3 class="design&development-header">Design & Development</h3>
+        <p class="design-development-paragraph">I first started to code in my second semseter at the university. I immediatley fell in love and now i'm profficient in Python, Java, C and C++.</p>
+      </div>
+      <div class="skill-row">
+        <img class="woodworking-img" src="images/skill5.png" alt="woodworking-icon">
+        <h3 class="woodworking-header">Woodworking & DIY</h3>
+        <p class="woodworking-paragraph">But my actual skill is woodworking and DIY. I can repair anything and I can make some fine pieces of furniture.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>if you love coffe as much as I do. We can code along while we're at it.</h3>
+      <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
+      <a class="btn" href="mailto:aaron.brkn@gmail.com">CONTACT ME</a>
+    </div>
+  </div>
 
-    </tfoot>
-    <tr>
-      <td>2015-2018</td>
-      <td>Army Service</td>
-    </tr>
-    <tr>
-      <td>2019</td>
-      <td>Tech Support Representative at Cellcom Group</td>
-    </tr>
-  </table>
-  <br>
-  <hr>
-  <h3>Skills</h3>
-  <table border="1">
-    <tr>
-      <td>
-        <table>
-          <tr>
-            <td>Python</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>C++</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>
-            <td>C</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Java</td>
-            <td>⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <strong><a href="hobbies.html">My Hobbies</a></strong>
-  <br>
-  <strong><a href="register.html">Register</a></strong>
-  <br>
-  <strong><a href="contact-me.html">Contact Me</a></strong>
+
+  <div class="bottom-container">
+    <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/aaron-barkan-6025b0198/">LinkedIn</a>
+    <a class="footer-link" target="_blank" href="https://www.facebook.com/ronny.barkan">Facebook</a>
+    <a class="footer-link" target="_blank" href="https://0rokusaki.github.io/cv/">Website</a>
+    <p>© 2021 Aaron Barkan.</p>
+  </div>
 </body>
 
 </html>
