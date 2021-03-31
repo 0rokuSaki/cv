@@ -17,9 +17,22 @@ hr {
   border-width: 7px;
   margin-top: 50px;
   margin-bottom: 40px;
-  color: #e3fdfd;
+  color: #cbf1f5;
 }
 
+h1 {
+  color: #2f5d62;
+}
+
+h2 {
+  color: #2f5d62;
+}
+
+h3 {
+  color: #2f5d62;
+}
+
+/*************** Top Container ***************/
 .top-container {
   background-color: #e3fdfd;
   height: 100%;
@@ -27,17 +40,18 @@ hr {
 
 .hello-header {
   font-family: 'Sacramento', cursive;
-  font-size: 600%;
-  margin-top: 0;
+  font-size: 8rem;
+  margin: 0;
   position: relative;
   top: 10%;
-
 }
 
-.hello-paragraph {
+.hello-sub-header {
+  color: #2f5d62;
   position: relative;
   top: 128px;
-  font-size: 24px;
+  font-size: 2.5rem;
+  font-weight: normal;
 }
 
 .big-cloud {
@@ -72,16 +86,90 @@ hr {
   width: auto;
 }
 
-
+/*************** Middle Container ***************/
 .middle-container {
-  background-color: #a6e3e9;
+  background-color: #e3fdfd;
+  padding-bottom: 3%;
 }
 
 .profile-img {
   padding-top: 64px;
 }
 
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  line-height: 2;
+  text-align: left;
+}
+
+.skill-img {
+  float: left;
+  height: 192px;
+  width: auto;
+  margin-right: 5%;
+}
+
+.woodworking-img {
+  float: right;
+  height: 192px;
+  width: auto;
+  margin-left: 5%;
+}
+
+.contact-me {
+  line-height: 2;
+}
+
+.btn {
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   color: #FFFFFF;
+   font-family: Quicksand;
+   font-size: 20px;
+   font-weight: 500;
+   padding: 5px 10px;
+   background-color: #71C9CE;
+   -webkit-box-shadow: 1px 0 5px 0 #000000;
+   -moz-box-shadow: 1px 0 5px 0 #000000;
+   box-shadow: 1px 0 5px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn:hover {
+   background: #E3FDFD;
+   background-image: -webkit-linear-gradient(top, #E3FDFD, #2F9296);
+   background-image: -moz-linear-gradient(top, #E3FDFD, #2F9296);
+   background-image: -ms-linear-gradient(top, #E3FDFD, #2F9296);
+   background-image: -o-linear-gradient(top, #E3FDFD, #2F9296);
+   background-image: -webkit-gradient(to bottom, #E3FDFD, #2F9296);
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   text-decoration: none;
+}
+
+/*************** Bottom Container ***************/
 .bottom-container {
-  background-color: #a6e3e9;
+  background-color: #66BFBF;
   margin-bottom: 0;
+  line-height: 3;
+}
+
+.footer-link {
+  color: #2f5d62;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+.copyright-paragraph {
+  color: white;
 }
