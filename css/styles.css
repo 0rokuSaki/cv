@@ -1,0 +1,253 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  text-align: center;
+  background-color: #e3fdfd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2f5d62;
+  font-weight: 600;
+}
+
+hr {
+  background-color: #e3fdfd;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 7px;
+  box-sizing: border-box;
+  color: #71c9ce;
+  margin: auto;
+  width: 128px;
+}
+
+p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.section {
+  margin: 5rem 0;
+}
+
+/* Title Section */
+
+#title {
+  position: relative;
+  height: 100vh;
+}
+
+.navbar-brand {
+  margin-left: 1%;
+}
+
+.nav-item {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.navbar ul {
+  text-align: left;
+}
+
+.top-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.main-heading {
+  font-family: "Sacramento";
+  font-weight: bold;
+  font-size: 8rem;
+  padding-top: 8%;
+  padding-bottom: 2%;
+}
+
+.sub-heading {
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-bottom: 8%;
+}
+
+.large-cloud {
+  position: absolute;
+  left: 10%;
+  top: -110%;
+}
+
+.small-cloud1 {
+  position: absolute;
+  right: 10%;
+  top: -120%;
+}
+
+.small-cloud2 {
+  position: absolute;
+  right: 20%;
+  top: -70%;
+}
+
+.mountain {
+  padding-top: 2%;
+}
+
+/* About Section */
+
+.profile {
+  margin: 5% auto 4rem;
+  width: 50%;
+}
+
+.profile h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Skills Section  */
+
+.skill-row {
+  width: 50%;
+  margin: 6% auto 10%;
+  line-height: 2;
+  text-align: left;
+}
+
+.skill-img {
+  float: left;
+  height: 192px;
+  width: auto;
+  margin-right: 5%;
+}
+
+.diy-img {
+  float: right;
+  height: 192px;
+  width: auto;
+  margin-left: 5%;
+}
+
+/* Contact Section */
+
+.contact-me {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.btn {
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   color: #FFFFFF;
+   font-family: Quicksand;
+   font-size: 20px;
+   font-weight: 500;
+   padding: 5px 10px;
+   background-color: #71C9CE;
+   -webkit-box-shadow: 1px 0 5px 0 #000000;
+   -moz-box-shadow: 1px 0 5px 0 #000000;
+   box-shadow: 1px 0 5px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn:hover {
+   background: #E3FDFD;
+   background-image: -webkit-linear-gradient(top, #E3FDFD, #2F9296);
+   background-image: -moz-linear-gradient(top, #E3FDFD, #2F9296);
+   background-image: -ms-linear-gradient(top, #E3FDFD, #2F9296);
+   background-image: -o-linear-gradient(top, #E3FDFD, #2F9296);
+   background-image: -webkit-gradient(to bottom, #E3FDFD, #2F9296);
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   text-decoration: none;
+}
+
+/* Footer Section */
+
+#footer {
+  background-color: #66BFBF;
+  padding: 1rem 0;
+}
+
+.bottom-container {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.footer-icon {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+
+.bottom-container p {
+  color: white;
+  margin-top: 16px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1280px){
+
+  .main-heading {
+    padding-top: 15%;
+  }
+
+  .large-cloud {
+    top: -150%;
+    height: 80%;
+    width: auto;
+  }
+
+  .profile, .skill-row, .contact-me, .bottom-container {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .small-cloud1 {
+    top: -200%;
+  }
+
+  .skill-row {
+    margin-bottom: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .main-heading {
+    font-size: 7rem;
+    padding-top: 30%;
+  }
+
+  .small-cloud1 {
+    right: 40%;
+    top: -220%;
+  }
+
+  .small-cloud2 {
+    right: 10%;
+    top: -120%;
+    height: 80%;
+    width: auto;
+  }
+
+  .profile, .skill-row, .contact-me, .bottom-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 512px) {
+
+  .cloud {
+    display: none;
+  }
+}
