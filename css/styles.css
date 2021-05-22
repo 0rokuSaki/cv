@@ -17,7 +17,21 @@ h2 {
   font-weight: 700;
 }
 
-/* Navbar Section */
+h3 {
+  font-size: 2rem;
+}
+
+.main-section {
+  height: 896px;
+  padding: 0 10%;
+}
+
+.transition-section {
+  height: 500px;
+  padding: 10% 10% 0;
+}
+
+/* ============ Navbar Section ============ */
 
 .navbar {
   font-weight: bold;
@@ -32,19 +46,13 @@ h2 {
   text-align: left;
 }
 
-.section {
-  padding: 2% 10%;
-}
 
-/* Home Section */
-
+/* ============ Home Section ============ */
 #home-section {
-  height: 100%;
   background-color: black;
-  padding: 15%;
 }
 
-.main-heading {
+#home-section h1 {
   position: absolute;
   left: 0;
   right: 0;
@@ -84,98 +92,71 @@ h2 {
   width: 7%;
 }
 
-/* Transition 1 Section */
 
+/* ============ Transition 1 Section ============ */
 #transition1-section {
-  height: 75%;
   background-image: linear-gradient(black, #1a0353);
 }
 
-.bio-heading {
-  padding: 1rem;
-}
 
-.bio-sub-heading {
-  font-size: 1.5rem;
-  padding: 1rem;
-}
-
-.bio-headings {
-  position: relative;
-  top: 20%;
-}
-
-/* Bio Section */
-
+/* ============ Bio Section ============ */
 #bio-section {
-  height: 100%;
   background-color: #1a0353;
 }
 
 .profile-picture {
-  display: inline;
-  height: auto;
-  width: 70%;
+  float: left;
+  width: 75%;
 }
 
 .my-description {
-  line-height: 1.7rem;
   text-align: left;
 }
 
-.about-me-saturn-icon {
-  padding-right: 10%;
-  text-align: right;
-}
-
 .saturn-icon {
+  float: right;
+  margin: 10% 7% 0 0;
   width: 30%;
 }
 
-.my-description br {
-  display: none;
-}
 
 /* Transition 2 Section */
 
 #transition2-section {
-  height: 60%;
   background-image: linear-gradient(#1a0353, #301c98);
 }
 
-.skills-heading {
-  padding-top: 17%;
-}
-
 .meteorites-icon {
-  position: absolute;
-  left: 15%;
-  top: 290%;
-  width: 12%;
+  position: relative;
+  bottom: 100%;
+  right: 40%;
+  width: 17.5%;
 }
 
 /* Skills Section */
 
 #skills-section {
-  height: 100%;
   background-color: #301c98;
+  padding: 5% 10%;
 }
 
-.skill-row {
-    width: 80%;
-    margin: 6% auto 10%;
-    line-height: 2;
-    text-align: left;
+.my-skills-mobile {
+  display: none;
 }
 
-.skill-img {
+.skill-item-desktop {
+  padding: 5% 0;
+  text-align: left;
+}
+
+.coding-icon {
     float: left;
     height: 192px;
     width: auto;
     margin-right: 5%;
 }
 
-.diy-img {
+.diy-icon {
     float: right;
     height: 192px;
     width: auto;
@@ -183,13 +164,12 @@ h2 {
 }
 
 #transition3-section {
-  height: 50%;
-    background-image: linear-gradient(#301c98, #5550c3
-);
+    background-image: linear-gradient(#301c98, #5550c3);
+    padding: 5% 10% 0;
 }
 
 #footer-section {
-  height: 20%;
+  height: 175px;
   background-color: #5550c3;
 }
 
@@ -287,226 +267,254 @@ h2 {
 
 /* Media Queries */
 
+/* Desktop - Small Window */
+@media (max-width: 976px) {
+
+  .main-section {
+    height: 896px;
+    padding: 0 24px !important;
+  }
+
+  .transition-section {
+    height: 500px;
+    padding: 10% 24px 0 !important;
+  }
+
+  /* ============ Home Section ============ */
+  .celestial-icon, .saturn-icon, .meteorites-icon {
+    display: none;
+  }
+
+  .black-hole-icon {
+    display: block;
+    left: 25%;
+    top: 60%;
+    width: 50%;
+  }
+
+  /* ============ Bio Section ============ */
+  .profile-picture {
+    float: none;
+    margin-bottom: 64px;
+  }
+
+
+
+  /* ============ Transition 2 Section ============ */
+  #transition2-section {
+    padding-top: 30%;
+    height: 200px;
+  }
+
+  /* ============ Skills Section ============ */
+  #skills-section {
+    height: 1440px;
+  }
+
+  .my-skills-desktop {
+    display: none;
+  }
+
+  .my-skills-mobile {
+    display: block;
+  }
+
+  .skill-item-mobile {
+    margin: 64px 0;
+  }
+
+  .skill-item-mobile h3, .skill-item-mobile p {
+    text-align: left;
+  }
+
+  .coding-icon, .diy-icon {
+    float: none;
+    width: 50%;
+    height: auto;
+  }
+
+  /* ============ Transition 3 Section ============ */
+  #transition3-section {
+    height: 640px;
+  }
+}
+
+
 /* Tablet Adjustments */
-@media (max-device-width: 1000px) {
+@media (max-device-width: 800px) {
+
+  .main-section {
+    height: 1305px;
+    padding: 24px !important;
+  }
+
+  .transition-section {
+    height: 350px;
+    padding: 10% 24px 0 !important;
+  }
 
   h1 {
     font-size: 8rem;
   }
 
+  p {
+    font-size: 1.5rem;
+  }
+
+  /* ============ Navbar Section ============ */
   .navbar, .navbar-brand {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     padding: .5rem;
   }
 
   .navbar-toggler-icon {
-    height: 4rem;
-    width: 4rem;
-    border-radius: 2rem;
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 1.75rem;
   }
 
-  .sparkles-bottom-icon {
-    display: none;
-  }
-
-  .sparkles-right-icon {
-    top: 45%;
-  }
-
-  .galaxy-icon {
-    left: 60%;
-    top: 65%;
-    width: 35%;
-  }
-
-  .black-hole-icon {
-    left: 10%;
-    top: 55%;
-    width: 35%;
-  }
-
-  .bio-heading {
-    font-size: 7rem;
-  }
-
-  .bio-sub-heading {
-    font-size: 3rem;
-  }
-
-  #bio-section {
-    height: 140%;
-  }
-
-  .about-me {
-    width: 90%;
-  }
-
+  /* ============ Bio Section ============ */
   .profile-picture {
-    width: 65%;
-  }
-
-  .my-description {
-    height: 100%;
-    padding-top: 15%;
-  }
-
-  .my-description h3 {
-    font-size: 4rem;
-    padding-bottom: 10%;
-  }
-
-  .my-description p {
-    line-height: 3rem;
-    font-size: 1.5rem;
-  }
-
-  .about-me-saturn-icon {
-    padding-top: 15%;
+    float: none;
+    margin-bottom: 64px;
   }
 
   .saturn-icon {
-    width: 50%;
+    margin: 0;
   }
 
+  /* ============ Transition 2 Section ============ */
   .meteorites-icon {
+    right: 30%;
+    bottom: 120%;
+  }
+
+  /* ============ Skills Section ============ */
+  #skills-section {
+    height: 1650px;
+  }
+
+  .my-skills-desktop {
     display: none;
   }
 
-  #transition2-section {
-    padding-top: 5%;
-    height: 40%;
+  .my-skills-mobile {
+    display: block;
   }
 
-  .skill-row {
-    width: 90%;
-    padding: 10% 0;
+  .skill-item-mobile {
+    margin: 64px 0;
   }
 
-  .skill-row p {
-    font-size: 1.5rem;
+  .skill-item-mobile h3, .skill-item-mobile p {
+    text-align: left;
   }
 
-  .skill-row h3 {
-    font-size: 2rem;
+  .coding-icon, .diy-icon {
+    float: none;
+    width: 50%;
+    height: auto;
+  }
+
+  /* ============ Transition 3 Section ============ */
+  #transition3-section {
+    height: 512px;
   }
 }
 
 /* Smartphone Adjustments */
 @media (max-device-width: 512px) {
+  body, html {font-size: 30px;}
 
-  h1 {
-    font-size: 10rem;
+  .main-section {
+    height: 1960px;
+    padding: 24px !important;
   }
 
-  h2 {
+  .transition-section {
+    height: 500px;
+    padding: 10% 24px 0 !important;
+  }
+
+  h1 {
     font-size: 8rem;
   }
 
-  .navbar-toggler-icon {
-    height: 5rem;
-    width: 5rem;
-    border-radius: 2rem;
+  p {
+    font-size: 1.5rem;
   }
 
-  .celestial-icon {
+  .container, .container-md, .container-sm {
+    max-width: 1024px;
+}
+
+  /* ============ Home Section ============ */
+  .celestial-icon, .saturn-icon, .meteorites-icon {
     display: none;
   }
 
   .black-hole-icon {
     display: block;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    width: 50%;
-    top: 55%;
+    top: 60%;
+    left: 22%;
+    width: 55%;
   }
 
-  .bio-sub-heading {
-    font-size: 4rem;
-  }
-
+  /* ============ Bio Section ============ */
   #bio-section {
-    height: 140%;
+    height: 1650px;
   }
-
   .profile-picture {
-    width: 85%;
+    float: none;
+    margin-bottom: 64px;
   }
 
-  .my-description {
-    height: 100%;
-    padding-top: 15%;
+  /* ============ Skills Section ============ */
+  #skills-section {
+    height: 2350px;
   }
 
-  .my-description h3 {
-    font-size: 7rem;
-    padding-bottom: 10%;
-  }
-
-  .paragraph-desktop {
+  .my-skills-desktop {
     display: none;
   }
 
-  .my-description br {
+  .my-skills-mobile {
     display: block;
   }
 
-  .my-description p {
-    line-height: 5rem;
-    font-size: 3.5rem;
+  .skill-item-mobile {
+    margin: 64px 0;
   }
 
-  .about-me-saturn-icon {
-    display: none;
-  }
-
-  .skills-heading {
-    padding-top: 50%;
-  }
-
-  #skills-section {
-    height: 260%;
-  }
-
-  .skill-row {
-    margin-bottom: 20%;
+  .skill-item-mobile h3, .skill-item-mobile p {
     text-align: left;
-    width: 85%;
   }
 
-  .skill-row img {
-    height: 512px;
-    margin: 15%;
-    width: auto;
+  .coding-icon, .diy-icon {
+    float: none;
+    width: 50%;
+    height: auto;
   }
 
-  .skill-row h3 {
-    font-size: 5rem;
-    padding: 20% 0;
-  }
-
-  .skill-row p {
-    font-size: 3.5rem;
-  }
-
+  /* ============ Transition 3 Section ============ */
   #transition3-section {
-    height: 100%;
-    padding-top: 20%;
+    height: 1024px;
   }
 
-  .footer-icon {
-    font-size: 5rem;
-    margin: 7%;
+  .btn {
+    font-size: 2.5rem;
+    border-radius: 24px;
+    padding: 10px 20px;
   }
 
-  .contact-me h3 {
-    font-size: 5rem;
-    padding: 10% 0;
+  /* ============ Footer Section ============ */
+  #footer-section {
+    height: 400px;
+    padding-top: 10%;
   }
 
-  .contact-me p, .btn, .bottom-container p {
-    font-size: 3.5rem;
-}
+  .bottom-container a {
+    font-size: 3rem;
+    margin: 0 32px;
+  }
 }
