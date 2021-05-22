@@ -1,0 +1,512 @@
+html, body {
+  color: #fff;
+  font-size: 20px;
+  font-family: Quicksand, sans-serif;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+/* Navbar Section */
+
+.navbar {
+  font-weight: bold;
+  padding: 0.5% 2%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar .nav-item {
+  text-align: left;
+}
+
+.section {
+  padding: 2% 10%;
+}
+
+/* Home Section */
+
+#home-section {
+  height: 100%;
+  background-color: black;
+  padding: 15%;
+}
+
+.main-heading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 27%;
+}
+
+.celestial-icon {
+  position: absolute;
+  top: 45%;
+}
+
+.black-hole-icon {
+  left: 12%;
+  width: 20%;
+}
+
+.galaxy-icon {
+  left: 67%;
+  width: 25%;
+}
+
+.sparkles-left-icon {
+  top: 20%;
+  left: 15%;
+  width: 5%;
+}
+
+.sparkles-bottom-icon {
+  top: 70%;
+  right: 50%;
+  width: 3%;
+}
+
+.sparkles-right-icon {
+  top: 20%;
+  left: 80%;
+  width: 7%;
+}
+
+/* Transition 1 Section */
+
+#transition1-section {
+  height: 75%;
+  background-image: linear-gradient(black, #1a0353);
+}
+
+.bio-heading {
+  padding: 1rem;
+}
+
+.bio-sub-heading {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.bio-headings {
+  position: relative;
+  top: 20%;
+}
+
+/* Bio Section */
+
+#bio-section {
+  height: 100%;
+  background-color: #1a0353;
+}
+
+.profile-picture {
+  display: inline;
+  height: auto;
+  width: 70%;
+}
+
+.my-description {
+  line-height: 1.7rem;
+  text-align: left;
+}
+
+.about-me-saturn-icon {
+  padding-right: 10%;
+  text-align: right;
+}
+
+.saturn-icon {
+  width: 30%;
+}
+
+.my-description br {
+  display: none;
+}
+
+/* Transition 2 Section */
+
+#transition2-section {
+  height: 60%;
+  background-image: linear-gradient(#1a0353, #301c98);
+}
+
+.skills-heading {
+  padding-top: 17%;
+}
+
+.meteorites-icon {
+  position: absolute;
+  left: 15%;
+  top: 290%;
+  width: 12%;
+}
+
+/* Skills Section */
+
+#skills-section {
+  height: 100%;
+  background-color: #301c98;
+}
+
+.skill-row {
+    width: 80%;
+    margin: 6% auto 10%;
+    line-height: 2;
+    text-align: left;
+}
+
+.skill-img {
+    float: left;
+    height: 192px;
+    width: auto;
+    margin-right: 5%;
+}
+
+.diy-img {
+    float: right;
+    height: 192px;
+    width: auto;
+    margin-left: 5%;
+}
+
+#transition3-section {
+  height: 50%;
+    background-image: linear-gradient(#301c98, #5550c3
+);
+}
+
+#footer-section {
+  height: 20%;
+  background-color: #5550c3;
+}
+
+.footer-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.bottom-container p {
+    color: white;
+    margin-top: 16px;
+}
+
+/* Button */
+.btn {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 10px;
+    background-color: #210f5d;
+    -webkit-box-shadow: 1px 0 5px 0 #000000;
+    -moz-box-shadow: 1px 0 5px 0 #000000;
+    box-shadow: 1px 0 5px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Fade-in text */
+.fade-in-text {
+  display: inline-block;
+  animation: fadeIn linear 4s;
+  -webkit-animation: fadeIn linear 4s;
+  -moz-animation: fadeIn linear 4s;
+  -o-animation: fadeIn linear 4s;
+  -ms-animation: fadeIn linear 4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media Queries */
+
+/* Tablet Adjustments */
+@media (max-device-width: 1000px) {
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  .navbar, .navbar-brand {
+    font-size: 2.5rem;
+    padding: .5rem;
+  }
+
+  .navbar-toggler-icon {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+  }
+
+  .sparkles-bottom-icon {
+    display: none;
+  }
+
+  .sparkles-right-icon {
+    top: 45%;
+  }
+
+  .galaxy-icon {
+    left: 60%;
+    top: 65%;
+    width: 35%;
+  }
+
+  .black-hole-icon {
+    left: 10%;
+    top: 55%;
+    width: 35%;
+  }
+
+  .bio-heading {
+    font-size: 7rem;
+  }
+
+  .bio-sub-heading {
+    font-size: 3rem;
+  }
+
+  #bio-section {
+    height: 140%;
+  }
+
+  .about-me {
+    width: 90%;
+  }
+
+  .profile-picture {
+    width: 65%;
+  }
+
+  .my-description {
+    height: 100%;
+    padding-top: 15%;
+  }
+
+  .my-description h3 {
+    font-size: 4rem;
+    padding-bottom: 10%;
+  }
+
+  .my-description p {
+    line-height: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .about-me-saturn-icon {
+    padding-top: 15%;
+  }
+
+  .saturn-icon {
+    width: 50%;
+  }
+
+  .meteorites-icon {
+    display: none;
+  }
+
+  #transition2-section {
+    padding-top: 5%;
+    height: 40%;
+  }
+
+  .skill-row {
+    width: 90%;
+    padding: 10% 0;
+  }
+
+  .skill-row p {
+    font-size: 1.5rem;
+  }
+
+  .skill-row h3 {
+    font-size: 2rem;
+  }
+}
+
+/* Smartphone Adjustments */
+@media (max-device-width: 512px) {
+
+  h1 {
+    font-size: 10rem;
+  }
+
+  h2 {
+    font-size: 8rem;
+  }
+
+  .navbar-toggler-icon {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 2rem;
+  }
+
+  .celestial-icon {
+    display: none;
+  }
+
+  .black-hole-icon {
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 50%;
+    top: 55%;
+  }
+
+  .bio-sub-heading {
+    font-size: 4rem;
+  }
+
+  #bio-section {
+    height: 140%;
+  }
+
+  .profile-picture {
+    width: 85%;
+  }
+
+  .my-description {
+    height: 100%;
+    padding-top: 15%;
+  }
+
+  .my-description h3 {
+    font-size: 7rem;
+    padding-bottom: 10%;
+  }
+
+  .paragraph-desktop {
+    display: none;
+  }
+
+  .my-description br {
+    display: block;
+  }
+
+  .my-description p {
+    line-height: 5rem;
+    font-size: 3.5rem;
+  }
+
+  .about-me-saturn-icon {
+    display: none;
+  }
+
+  .skills-heading {
+    padding-top: 50%;
+  }
+
+  #skills-section {
+    height: 260%;
+  }
+
+  .skill-row {
+    margin-bottom: 20%;
+    text-align: left;
+    width: 85%;
+  }
+
+  .skill-row img {
+    height: 512px;
+    margin: 15%;
+    width: auto;
+  }
+
+  .skill-row h3 {
+    font-size: 5rem;
+    padding: 20% 0;
+  }
+
+  .skill-row p {
+    font-size: 3.5rem;
+  }
+
+  #transition3-section {
+    height: 100%;
+    padding-top: 20%;
+  }
+
+  .footer-icon {
+    font-size: 5rem;
+    margin: 7%;
+  }
+
+  .contact-me h3 {
+    font-size: 5rem;
+    padding: 10% 0;
+  }
+
+  .contact-me p, .btn, .bottom-container p {
+    font-size: 3.5rem;
+}
+}
