@@ -24,13 +24,13 @@ h3 {
 .main-section {
   height: 896px;
   padding: 0 10%;
-  margin: -1px;
+  margin: -1px 0;
 }
 
 .transition-section {
   height: 500px;
   padding: 10% 10% 0;
-  margin: -1px;
+  margin: -1px 0;
 }
 
 /* ============ Navbar Section ============ */
